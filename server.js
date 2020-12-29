@@ -51,6 +51,7 @@ app.use("/item", jsonParser, function (req, res) {
 
 app.use(express.static('build'));
 
-app.listen(process.env.PORT || 3000, function () {
+// app.listen(process.env.PORT || 3000, function () {
+app.listen(3000, function () {
   console.log("ExpressJs server run on 3000 port");
 });

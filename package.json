@@ -8,8 +8,8 @@
     "lint:scripts": "eslint src",
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js",
     "start": "webpack serve --config webpack/webpack.config.dev.js",
-    "production-server": "node ./node_modules/npm-run-all/bin/npm-run-all/index.js --serial --continue-on-error --print-name --silent build express",
-    "express": "node server.js"
+    "express": "node server.js",
+    "production": "node ./node_modules/npm-run-all/bin/npm-run-all/index.js --serial --continue-on-error --print-name --silent build express"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
